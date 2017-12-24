@@ -12,6 +12,11 @@
 		6BC48F3D1FE7BF820047BA55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC48F3B1FE7BF820047BA55 /* Main.storyboard */; };
 		6BC48F3F1FE7BF820047BA55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC48F3E1FE7BF820047BA55 /* Assets.xcassets */; };
 		6BC48F421FE7BF820047BA55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BC48F401FE7BF820047BA55 /* LaunchScreen.storyboard */; };
+		6BC48F4C1FE7C2AE0047BA55 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC48F4B1FE7C2AE0047BA55 /* TodoViewModel.swift */; };
+		6BC48F511FE7C95E0047BA55 /* TodoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC48F4F1FE7C95E0047BA55 /* TodoItemCell.swift */; };
+		6BC48F521FE7C95E0047BA55 /* TodoItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BC48F501FE7C95E0047BA55 /* TodoItemCell.xib */; };
+		6BC48F581FEE0C520047BA55 /* Protocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC48F571FEE0C520047BA55 /* Protocal.swift */; };
+		6BC48F5A1FEE13B40047BA55 /* Theme.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC48F591FEE13B40047BA55 /* Theme.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		6BC48F3E1FE7BF820047BA55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC48F411FE7BF820047BA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BC48F431FE7BF820047BA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC48F4B1FE7C2AE0047BA55 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		6BC48F4F1FE7C95E0047BA55 /* TodoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemCell.swift; sourceTree = "<group>"; };
+		6BC48F501FE7C95E0047BA55 /* TodoItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoItemCell.xib; sourceTree = "<group>"; };
+		6BC48F571FEE0C520047BA55 /* Protocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocal.swift; sourceTree = "<group>"; };
+		6BC48F591FEE13B40047BA55 /* Theme.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Theme.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		6BC48F361FE7BF820047BA55 /* MVVM-Practice2 */ = {
 			isa = PBXGroup;
 			children = (
-				6BC48F371FE7BF820047BA55 /* AppDelegate.swift */,
-				6BC48F391FE7BF820047BA55 /* ViewController.swift */,
+				6BC48F561FE8ED6A0047BA55 /* ViewModel */,
+				6BC48F551FE8ED590047BA55 /* VC */,
+				6BC48F541FE8ED3E0047BA55 /* View */,
+				6BC48F531FE8ED2C0047BA55 /* System */,
 				6BC48F3B1FE7BF820047BA55 /* Main.storyboard */,
-				6BC48F3E1FE7BF820047BA55 /* Assets.xcassets */,
 				6BC48F401FE7BF820047BA55 /* LaunchScreen.storyboard */,
-				6BC48F431FE7BF820047BA55 /* Info.plist */,
+				6BC48F591FEE13B40047BA55 /* Theme.xcassets */,
 			);
 			path = "MVVM-Practice2";
+			sourceTree = "<group>";
+		};
+		6BC48F531FE8ED2C0047BA55 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				6BC48F371FE7BF820047BA55 /* AppDelegate.swift */,
+				6BC48F3E1FE7BF820047BA55 /* Assets.xcassets */,
+				6BC48F431FE7BF820047BA55 /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		6BC48F541FE8ED3E0047BA55 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BC48F4F1FE7C95E0047BA55 /* TodoItemCell.swift */,
+				6BC48F501FE7C95E0047BA55 /* TodoItemCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BC48F551FE8ED590047BA55 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6BC48F391FE7BF820047BA55 /* ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6BC48F561FE8ED6A0047BA55 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BC48F4B1FE7C2AE0047BA55 /* TodoViewModel.swift */,
+				6BC48F571FEE0C520047BA55 /* Protocal.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +172,8 @@
 			files = (
 				6BC48F421FE7BF820047BA55 /* LaunchScreen.storyboard in Resources */,
 				6BC48F3F1FE7BF820047BA55 /* Assets.xcassets in Resources */,
+				6BC48F5A1FEE13B40047BA55 /* Theme.xcassets in Resources */,
+				6BC48F521FE7C95E0047BA55 /* TodoItemCell.xib in Resources */,
 				6BC48F3D1FE7BF820047BA55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC48F4C1FE7C2AE0047BA55 /* TodoViewModel.swift in Sources */,
 				6BC48F3A1FE7BF820047BA55 /* ViewController.swift in Sources */,
+				6BC48F511FE7C95E0047BA55 /* TodoItemCell.swift in Sources */,
+				6BC48F581FEE0C520047BA55 /* Protocal.swift in Sources */,
 				6BC48F381FE7BF820047BA55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVVM-Practice2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM-Practice2/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liao-yuhao.ReactiveTest.MVVM-Practice2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVVM-Practice2/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM-Practice2/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liao-yuhao.ReactiveTest.MVVM-Practice2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
